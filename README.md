@@ -8,6 +8,13 @@ The notebook in this repo compares the speed for loading tiles from a big 10980 
 * Saving all tiles beforhand in a hdf5 file
 
 
+
+# Preperations
+
+you have to download the Sentinel-2 file XXX and put it direcly into this direcory.
+
+
+
 # Results:
 
 | Methode                                                                               | Avg Time |
