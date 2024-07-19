@@ -1,4 +1,4 @@
-# Comparison for loading speed for raster data machine learning
+# Comparison for reading speed of satellite raster data for fast deep learning data loader
 
 Data like Sentinel-2 satellite images comes in compressed .jp2 separate tiles per band covering big spacial extends. Loading patches (windows) via *rasterio* can be very slow and therefore represent the bottleneck of a machine leaning pipeline. Alternatively, one can extract patches beforehand and store them separately or in a combined hdf5 file. Still, this generates storage overhead and makes visualization more difficult (large rasters can be more easily displayed).
 
@@ -32,8 +32,6 @@ from https://dataspace.copernicus.eu/ and put it directly into the directory of 
 * Statistics over 1024 load operations with a i3-10105 @ 3.70GHz CPU.
 
 * Storage is given in GB for roughly 1764 patches with is the 42² patches you get when tiling the 10980 x 10980 Sentinel-2 raster with a 256 patch size. (Done this way so we can compare to the hdf5 setup)
-
-
 
 | Method                                                       | Avg Time | Storage for ~1764 patches |
 | ------------------------------------------------------------ | -------- | ------------------------- |
