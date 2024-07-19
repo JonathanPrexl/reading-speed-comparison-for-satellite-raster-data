@@ -41,6 +41,11 @@ from https://dataspace.copernicus.eu/ and put it directly into the directory of 
 | Individual samples stored in a hdf5 file                     | 0.00069  | 2.8 GB                    |
 
 
+![](./imgs/speed.png)
+
+
+
+
 # Takeaway
 
 * Writing every band into a common geotiff and using the tilling flag already provides significant speedup.
