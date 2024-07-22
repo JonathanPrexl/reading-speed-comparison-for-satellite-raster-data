@@ -38,7 +38,7 @@ from https://dataspace.copernicus.eu/ and put it directly into the directory of 
 | Separate .jp2 file per band. Up-sampling while loading.      | 0.316 s  | 1.2 GB                    |
 | One GeoTiff with all band (up-sampling does not happen anymore while loading the data) | 0.046 s  | 2.9 GB                    |
 | GeoTiff with tiled=True option                               | 0.0042 s | 2.9 GB                    |
-| Individual samples stored in a hdf5 file                     | 0.00069  | 2.8 GB                    |
+| Individual samples stored in a hdf5 file                     | 0.00069 s  | 2.8 GB                    |
 
 
 
